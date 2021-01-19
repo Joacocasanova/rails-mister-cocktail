@@ -1,10 +1,18 @@
-<h1>All Our Cocktails</h1>
+<div class="container">
+<h1 class="title">Mistercocktail</h1>
+</div>
 
-<ul>
-<% @cocktails.each do |cocktail|%>
-
-<li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
-<% end %>
-</ul>
-
-<%= link_to "New Cocktail", new_cocktail_path %>
+<div class="container mt-3">
+  <div class="row">
+  <% @cocktails.each do |cocktail| %>
+  <div class="col-6 col-md-4 col-lg-3 mt-3">
+    <div class="card">
+      <img class="card-img-top" src=<%= cocktail.image %> alt="Cocktail image">
+      <div class="card-body bg-light">
+        <h5 class="card-title"> <strong><%= link_to cocktail.name, cocktail_path(cocktail) %></h5></strong>
+      </div>
+    </div>
+  </div>
+  <% end %>
+  </div>
+</div>
