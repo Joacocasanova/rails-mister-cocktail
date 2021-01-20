@@ -1,4 +1,4 @@
-<div class="banner d-flex justify-content-center align-items-center" style="background-image: url(<%= @cocktail.image %>);">
+<div class="banner d-flex justify-content-center align-items-center" style="background-image: url(<%= cl_image_path @cocktail.photo.key, height: 300, width: 400, crop: :fill %>);">
   <div>
     <h1><%= @cocktail.name %></h1>
   </div>
