@@ -12,4 +12,34 @@
 @import "components/index";
 @import "pages/index";
 
-@import 'select2/dist/css/select2'
+@import 'select2/dist/css/select2';
+
+body {
+  background-color:#343A40
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+label {
+  color: white;
+}
+
+li {
+  list-style: none;
+  color: white;
+}
+
+.name-poss {
+  position: relative;
+  top: 210px;
+  right: 10px;
+  font-weight: bold;
+  color: #e2e2e2;
+  font-size: 40px;
+}
